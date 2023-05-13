@@ -32,7 +32,7 @@ function Soldier(row, col, color = 'white') {
     let hasMoved = false
     return {
         name: `${color} Soldier`,
-        icon: `<img src='/assets/images/${color}-soldier.png'/>`,
+        icon: `<img src='/chess_game/assets/images/${color}-soldier.png'/>`,
         color,
         getPossibleMoves: () => {
             let possibleMoves = []
@@ -69,7 +69,7 @@ function Elephant(row, col, color = 'white') {
 
     return {
         name: `${color} Elephant`,
-        icon: `<img src='/assets/images/${color}-elephant.png'/>`,
+        icon: `<img src='/chess_game/assets/images/${color}-elephant.png'/>`,
         color,
         getPossibleMoves: () => {
             let possibleMoves = [];
@@ -132,7 +132,7 @@ function Camel(row, col, color = 'white') {
     let y = col;
     return {
         name: `${color} Camel`,
-        icon: `<img src='/assets/images/${color}-bishop.png'/>`,
+        icon: `<img src='/chess_game/assets/images/${color}-bishop.png'/>`,
         color,
         getPossibleMoves: () => {
             let possibleMoves = []
@@ -193,7 +193,7 @@ function Horse(row, col, color = 'white') {
     let y = col;
     return {
         name: `${color} Horse`,
-        icon: `<img src='/assets/images/${color}-horse.png'/>`,
+        icon: `<img src='/chess_game/assets/images/${color}-horse.png'/>`,
         color,
         getPossibleMoves: () => {
             let possibleMoves = []
@@ -227,7 +227,7 @@ function King(row, col, color = 'white') {
     let y = col;
     return {
         name: `${color} King`,
-        icon: `<img src='/assets/images/${color}-king.png'/>`,
+        icon: `<img src='/chess_game/assets/images/${color}-king.png'/>`,
 
         color,
         getPossibleMoves: () => {
@@ -263,7 +263,7 @@ function Queen(row, col, color = 'white') {
 
     return {
         name: `${color} Queen`,
-        icon: `<img src='/assets/images/${color}-queen.png'/>`,
+        icon: `<img src='/chess_game/assets/images/${color}-queen.png'/>`,
         color,
         getPossibleMoves: () => {
 
@@ -395,7 +395,7 @@ function onPieceClick(row, col) {
 }
 
 const board = document.querySelector('.board')
-const move = `<img src="/assets/images/move.png" class="move"/>`
+const move = `<img src="/chess_game/assets/images/move.png" class="move"/>`
 function renderBoardFromState() {
 
     let boardHtml = ''
